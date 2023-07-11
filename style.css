@@ -7,14 +7,11 @@ body {
     width: 150px;
 }
 
-.main-picture {
-    width: 150px;
-}
-
 ul {
     list-style-type: none;
     display: flex;
     gap: 10px;
+    padding: 10px;
 }
 
 
@@ -23,12 +20,46 @@ a {
     color: black;
 }
 
+h1, h2 {
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.testimonal-para, h3 {
+    font-size: 36px;
+    font-style: italic;
+    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightpink;
+    color: black;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(254, 150, 167);
+}
+
 .header-links {
     margin-left: auto;
 }
 
 .main-header {
-    background-color: lightpink;
+    background-color: rgb(255, 222, 226);
 }
 
 
@@ -40,9 +71,22 @@ a {
 
 .main-header-content {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    padding: 20px;
+    gap: 70px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.left-main-content {
+    max-width: 400px;
+    flex-shrink: 0;
+}
+
+.main-picture {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .harman-picture,
@@ -61,4 +105,40 @@ a {
 .tutors {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.testimonal {
+    display: flex;
+    background-color: rgb(228, 228, 228);
+    margin-top: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.testimonal-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-name {
+    margin-left: auto;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(255, 222, 226);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
 }
