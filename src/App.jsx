@@ -1,9 +1,11 @@
-import { Footer } from "./components/footer";
-import { Header } from "./components/header";
-import { SignUp } from "./components/sign-up";
-import { TeamSection } from "./components/team-section";
-import { Testimonials } from "./components/testimonials";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { SignUp } from "./components/Sign-up";
+import { TeamSection } from "./components/Team-section";
+import { Testimonials } from "./components/Testimonials";
 import "./styles.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <Testimonials />
       <SignUp />
       <Footer />
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 }
