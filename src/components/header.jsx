@@ -25,7 +25,7 @@ export function Header() {
                 </a>
               </li>
               <li>
-                <a href="prices.html" className="links">
+                <a href="#" className="links">
                   💰 - Prices
                 </a>
               </li>
