@@ -11,7 +11,7 @@ export function Header() {
         <header className="top-header">
           <div className="logo">
             <img
-              src="../images/logo-no-background.png"
+              src="/public/logo-no-background.png"
               alt="All-Star Tutoring Logo"
               className="logo"
             />
@@ -62,7 +62,7 @@ export function Header() {
 
           <div className="right-main-image">
             <img
-              src="../images/cover.png"
+              src="/public/cover.png"
               alt="kids studying"
               className="main-picture"
             />
