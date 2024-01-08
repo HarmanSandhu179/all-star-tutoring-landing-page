@@ -46,7 +46,7 @@ export const ContactUs = ({ setShowForm }) => {
         Let us know your name, email, and grade and what subject you need help
         with and we will get back to you as soon as possible!
       </p>
-      <input type="text" name="from_name" placeholder="Name" />
+      <input type="text" name="from_name" placeholder="Name" required />
       <input
         type="email"
         name="from_email"
@@ -54,7 +54,7 @@ export const ContactUs = ({ setShowForm }) => {
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         required
       />
-      <input name="message" placeholder="Message" />
+      <input name="message" placeholder="Message" required />
       {/* <input type="submit" value="Send" /> */}
       <button type="submit">Submit</button>
     </form>

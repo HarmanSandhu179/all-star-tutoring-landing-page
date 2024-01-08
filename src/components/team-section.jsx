@@ -6,12 +6,12 @@ export function TeamSection() {
 
         <div className="tutors">
           <img
-            src="/public/gurleen-picture.jpg"
+            src="/gurleen-picture.jpg"
             alt="gurleen"
             className="gurleen-picture"
           />
           <img
-            src="/public/harman-picture.jpg"
+            src="/harman-picture.jpg"
             alt="harman"
             className="harman-picture"
           />

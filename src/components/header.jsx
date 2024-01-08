@@ -11,7 +11,7 @@ export function Header() {
         <header className="top-header">
           <div className="logo">
             <img
-              src="/public/logo-no-background.png"
+              src="/logo-no-background.png"
               alt="All-Star Tutoring Logo"
               className="logo"
             />
@@ -62,14 +62,14 @@ export function Header() {
 
           <div className="right-main-image">
             <img
-              src="/public/cover.png"
+              src="/cover.png"
               alt="kids studying"
               className="main-picture"
             />
           </div>
         </div>
         {/* {showForm ? <SignUpForm setShowForm={setShowForm} /> : null} */}
-        {showForm ? <ContactUs setShowForm={setShowForm} /> : null}
+        {showForm && <ContactUs setShowForm={setShowForm} />}
       </div>
     </>
   );
