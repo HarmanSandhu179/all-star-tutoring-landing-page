@@ -59,6 +59,7 @@ export function Header() {
               {showForm ? "Close" : "Sign up"}
             </button>
           </div>
+          {showForm && <ContactUs setShowForm={setShowForm} />}
 
           <div className="right-main-image">
             <img
@@ -69,7 +70,6 @@ export function Header() {
           </div>
         </div>
         {/* {showForm ? <SignUpForm setShowForm={setShowForm} /> : null} */}
-        {showForm && <ContactUs setShowForm={setShowForm} />}
       </div>
     </>
   );
