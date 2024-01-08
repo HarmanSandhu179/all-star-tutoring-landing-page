@@ -1,11 +1,11 @@
 import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
 import { SignUp } from "./components/Sign-up";
 import { TeamSection } from "./components/Team-section";
 import { Testimonials } from "./components/Testimonials";
 import "./styles.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Header } from "./components/header";
 
 function App() {
   return (
