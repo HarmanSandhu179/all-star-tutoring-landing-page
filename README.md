@@ -1,7 +1,8 @@
-# All Star Tutoring Landing Page
+# React + Vite
 
-This project is a landing page for my business All-Star Tutoring.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-**Clean and Engaging Design:** The landing page features a user-friendly and visually appealing design, ensuring a positive first impression for visitors.
+Currently, two official plugins are available:
 
-**Link to the landing page:** https://harmansandhu179.github.io/all-star-tutoring-landing-page/#
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
