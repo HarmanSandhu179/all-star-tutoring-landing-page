@@ -8,6 +8,7 @@ body {
 
 .logo {
   width: 150px;
+  margin-left: 10px;
 }
 
 ul {
@@ -29,7 +30,7 @@ h2 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 60px;
 }
 
 h2 {
@@ -63,6 +64,43 @@ button:hover {
 
 .main-header {
   background-color: rgb(255, 222, 226);
+  height: 100vh;
+}
+
+/* // EXTRA  */
+.main-header {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #b2c0ff 100%);
+  background-size: 600% 600%; /* Increase the size for more bands of color */
+  animation: gradientAnimation 10s ease infinite; /* Adjust timing as needed */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sign-up-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ff9a9e; /* Matched color from the gradient */
+  color: black;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.sign-up-button:hover {
+  background-color: #ff7f82; /* Darken the color slightly on hover */
 }
 
 .top-header {
@@ -77,13 +115,13 @@ button:hover {
   align-items: center;
   gap: 70px;
   padding: 30px;
-  padding-top: 0px;
+  padding-top: 100px;
   flex-wrap: wrap;
 }
 
 .left-main-content {
-  max-width: 400px;
-  flex-shrink: 0;
+  max-width: 500px;
+  /* flex-shrink: 0; */
 }
 
 .main-picture {
@@ -103,6 +141,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
 }
 
 .tutors {
@@ -208,10 +249,11 @@ link[rel="icon"] {
   font-size: 20px;
   font-family: "Playfair Display", serif;
   font-weight: 400;
+  margin-right: 10px;
 }
 
 .list-links {
-  gap: 20px;
+  gap: 50px;
 }
 
 @media (max-width: 500px) {
@@ -227,15 +269,40 @@ link[rel="icon"] {
     flex-direction: column;
   }
 
+  .left-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-main-content h1 {
+    display: flex;
+  }
+
+  .left-main-content span {
+    flex: 1;
+  }
+
+  .header-links {
+    margin-left: 0;
+  }
+
+  /* .list-links {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  } */
+
   .top-header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .header-links {
+  /* .header-links {
     margin-left: 0;
-  }
+  } */
 
   .main-header-content {
     display: flex;

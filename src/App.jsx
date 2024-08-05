@@ -1,5 +1,5 @@
-import { SignUp } from "./components/Sign-up";
-import { TeamSection } from "./components/Team-section";
+import { SignUp } from "./components/Sign-Up";
+import { TeamSection } from "./components/Team-Section";
 import { Testimonials } from "./components/Testimonials";
 import "./styles.css";
 import { ToastContainer } from "react-toastify";

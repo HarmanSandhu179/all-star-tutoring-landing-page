@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Typewriter from "../animations/Typewriter";
 import { ContactUs } from "./Contact";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [showForm, setShowForm] = useState(false);
@@ -21,23 +22,28 @@ export function Header() {
             <ul className="list-links">
               <li>
                 <a className="links" href="#">
-                  ⭐ - About
+                  About
                 </a>
               </li>
               <li>
-                <a href="#" className="links">
-                  💰 - Prices
-                </a>
+                {/* <a href="/pricepage" className="links">
+                  Prices
+                </a> */}
+                <Link to="/pricepage" className="links">
+                  {" "}
+                  Prices{" "}
+                </Link>
               </li>
               <li>
                 <a href="#" className="links">
-                  ❓ - FAQ
+                  FAQ
                 </a>
               </li>
             </ul>
           </div>
         </header>
         <div className="main-header-content">
+          {/* <div className="left-main-content"> */}
           <div className="left-main-content">
             <h1>All-Star Tutoring</h1>
             <p className="text-animation">
@@ -54,20 +60,25 @@ export function Header() {
                 delay={150}
               />
             </p>
-
-            <button onClick={() => setShowForm((show) => !show)}>
+          </div>
+          <div className="right-main-content">
+            <button
+              onClick={() => setShowForm((show) => !show)}
+              className="sign-up-button"
+            >
               {showForm ? "Close" : "Sign up"}
             </button>
+            {/* </div> */}
+            {showForm && <ContactUs setShowForm={setShowForm} />}
           </div>
-          {showForm && <ContactUs setShowForm={setShowForm} />}
 
-          <div className="right-main-image">
+          {/* <div className="right-main-image">
             <img
               src="/cover.png"
               alt="kids studying"
               className="main-picture"
             />
-          </div>
+          </div> */}
         </div>
         {/* {showForm ? <SignUpForm setShowForm={setShowForm} /> : null} */}
       </div>
