@@ -1,4 +1,3 @@
-import { SignUp } from "./components/Sign-Up";
 import { TeamSection } from "./components/Team-Section";
 import { Testimonials } from "./components/Testimonials";
 import "./styles.css";
@@ -13,7 +12,6 @@ function App() {
       <Header />
       <TeamSection />
       <Testimonials />
-      <SignUp />
       <Footer />
       <ToastContainer position="top-right" autoClose={3000} />
     </>
